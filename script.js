@@ -26,13 +26,13 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     })
     var typed = new Typed(".typing",{
-        strings: ["YouTuber", "Developer", "Designer","Gamer","Artist"],
+        strings: ["The Ruler of Ionia", "The God of Thunder","The God of Lightning"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     })
     var typed = new Typed(".typing-2",{
-        strings: ["YouTuber", "Developer", "Designer","Gamer","Artist"],
+        strings: ["Ionian", "Top Main","Gamer","Artist"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
