@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+
+
+
+
     $(window).scroll(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
@@ -32,9 +37,9 @@ $(document).ready(function(){
         loop: true
     })
     var typed = new Typed(".typing-2",{
-        strings: ["Ionian", "Top Main","Gamer","Artist"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        strings: ['""', '""','"Freedom has a demanding rhythm."','"Be the leader they need."'],
+        typeSpeed: 70,
+        backSpeed: 45,
         loop: true
     })
 
@@ -60,4 +65,25 @@ $(document).ready(function(){
             }
         }
     });
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items:1,
+                nav: false
+            },
+            600:{
+                items:2,
+                nav: false
+            },
+            1000:{
+                items:3,
+                nav: false
+            }
+        }
+    });
+
 });
