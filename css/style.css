@@ -358,7 +358,7 @@ section .title::after{
 	background: #02e33e;
 }
 .skills-content .right .csharp::before{
-	width: 115%;
+	width: 105%;
 }
 .skills-content .right .python::before{
 	width: 39%;
@@ -469,7 +469,14 @@ section .title::after{
 .contact .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
+    color: #fff;
     margin: 10px 0 7px 0;
+}
+.contact .carousel .card .text1{
+    color: #02e33e;
+}
+.contact .carousel .card .{
+    color: #fff;
 }
 .contact .carousel .card img{
     height: 150px;
@@ -480,7 +487,10 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .contact .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #ff0023;
+}
+.contact .carousel .card:hover .text1{
+    color: #000;
 }
 .owl-dots{
 	text-align: center;

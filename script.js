@@ -37,7 +37,7 @@ $(document).ready(function(){
         loop: true
     })
     var typed = new Typed(".typing-2",{
-        strings: ['""', '""','"Freedom has a demanding rhythm."','"Be the leader they need."'],
+        strings: ["Those who run from death...stood still in life.", "Beauty fades. That is why it is beautiful.","Embracing life means accepting death.","The masks of the Kindred seek you!"],
         typeSpeed: 70,
         backSpeed: 45,
         loop: true
