@@ -12,7 +12,8 @@ a{
 	color: white;
 }
 .max-width{
-	max-width: 1300px;
+	max-width: 1920px;
+	width: auto;
 	padding: 0 80px;
 	margin: auto;
 }
@@ -105,11 +106,13 @@ a{
 /* home section styling*/
 .home{
 	display: flex;
+	width: 100%;
 	background: url("../images/banner.jpg") no-repeat center;
 	height: 100vh;
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;
+        width:auto;
 	min-height: 500px;
 	font-family: 'Ubuntu', sans-serif;
 
@@ -152,6 +155,9 @@ a{
 }
 /*all similar content styling code*/
 section{
+	max-width: 1920;
+	min-width: 1300;
+	min-height: 1080;
 	padding: 150px 0;
 }
 .about, .services, .skills, .teams, .contact, footer{
@@ -160,7 +166,7 @@ section{
 .about .about-content,.services .serv-content, .skills .skills-content, .contact .contact-content{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: left;
 	justify-content: space-between;
 }
 section .title{
@@ -203,7 +209,8 @@ section .title::after{
 }
 
 .about .about-content .left{
-	width: 45%;
+	align-self: center;
+	width: 700px;
 }
 .about .about-content .left img{
 	height: 700px;
@@ -212,11 +219,13 @@ section .title::after{
 	border-radius: 6px;
 }
 .about .about-content .right{
-	width: 55%;
+	width: 500px;
 }
 .about .about-content .right .text{
 	font-size: 25px;
 	font-weight: 600;
+	text-align: left;
+	max-width: 400px;
 	margin-bottom: 10px;
 }
 .about .about-content .right .text span{
@@ -358,7 +367,7 @@ section .title::after{
 	background: #02e33e;
 }
 .skills-content .right .csharp::before{
-	width: 105%;
+	width: 100%;
 }
 .skills-content .right .python::before{
 	width: 39%;
