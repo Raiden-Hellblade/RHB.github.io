@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confession</title>
+    </head>
+    <body>
+        <style>
+        @font-face {
+            font-family: 'LucidaGrande';
+            src: url('LucidaGrande.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'LucidaGrandeBold';
+            src: url('LucidaGrandeBold.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'MyriadPro';
+            src: url('MYRIADPRO-REGULAR.OTF') format('opentype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'MyriadPro';
+            src: url('MYRIADPRO-BOLD.OTF') format('opentype');
+            font-weight: bold;
+        }
+
+        body {
+            font-family: 'MyriadPro', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            gap: 30px;
+            overflow-x: hidden;
+        }
+
+        b 
+        {
+            font-weight: bold;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            color: #333;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: 'MyriadPro', Arial, sans-serif;
+            color: #555;
+            text-align: left;
+            font-size: small;
+        }
+
+        .text1 {
+            font-family: 'LucidaGrande', Arial, sans-serif;
+        }
+
+        .text1b {
+            font-family: 'LucidaGrandeBold', Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #ffffff;
+            /* border-radius: 8px; */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 0 20px 20px 20px;
+            width: 700px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 0 20px 20px 20px;
+            width: 700px;
+            text-align: center;
+        }
+
+        .wrapper {
+            height: min-content;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* border: 1px solid #ccc; */
+            text-align: center;
+            cursor: pointer;
+            /* overflow: hidden; */
+            transition: all 0.3s ease;
+            /* padding: 5px; */
+            margin-bottom: 25px;
+        }
+
+        .wrapper-content {
+            display: block;
+            z-index: 2;
+            filter: blur(3px);
+            transition: filter 0.15s ease;
+        }
+
+        .wrapper-content p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper.active .wrapper-content {
+            display: block;
+            filter: blur(0px);
+        }
+
+
+        </style>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded successfully!');
+        });
+        </script>
+
+        <div class="header">
+            <h1>Hello there, my favorite dumbass!</h1>
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <p>I have somethings to tell you, somethings to explain,
+                        somethings
+                        to ask and somethings are yours to figure out.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <h4>First of all, here are some things you may or may not
+                        have
+                        noticed. Since I was the one doing them, I was
+                        hyper-aware of
+                        them, you notice the smallest details when its your own
+                        actions,
+                        even when others don’t..</h4>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <p>One thing you might or might not not have noticed is how
+                        I’m almost always jokingly mean to you—calling you a
+                        dumbass, an idiot, or playfully making fun of you. I do
+                        this with my other friends too, but never as much as I
+                        do with you.</p>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <p>Another thing you might have noticed—or maybe not—is that
+                        I have trouble complimenting you. Over time, I’ve
+                        managed to do it here and there, but even now, it’s
+                        still rare and usually very minimal. (its cuz you dont
+                        deserve any /jk)</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <p>This next point is kind of related to the last one, but I
+                        still think it’s worth mentioning. You might have
+                        noticed that I have trouble being honest about my
+                        opinions on certain things—mainly when it comes to
+                        saying something nice to you or giving you a compliment.
+                        You might even remember me jokingly saying,
+                        "Argh, it’s so hard to be honest with you xD," but I
+                        never really explained why.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <p>This one you might not have noticed at all, but I
+                        actually try my best not to ask you any
+                        questions—especially if they’re about your life,
+                        preferences, or anything that might make it seem like I
+                        have an extended interest in you or your life. There are
+                        more things but they are small details so not gonna
+                        bother mentioning.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <h5>
+                        Well... the reason behind all of those things is
+                        actually quite simple. <br><br>
+                        It’s just that—<strong>I’m scared to lose
+                            you.</strong><br><br>
+                        Really scared, in fact.
+                        <br><br>
+                        And why am I so scared to lose you?<br>
+                        Because... <strong>I love you.</strong>
+                        <br><br>
+                        Yes—this is a confession..im so sorry...
+                        <br><br>
+                        I held back on all those things I mentioned earlier, not
+                        because I didn’t want to show you how much I care, but
+                        because I was afraid that if I did…
+                        you’d realize how deeply I admire and love you.<br><br>
+                        And maybe that realization would push you away.<br>
+                        Or worse… make you leave.
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <h4>What made me fall for you?</h4>
+                    <p>
+                        I’m so sorry.<br>
+                        I really, truly tried my best <b>not</b> to fall for
+                        you.<br>
+                        But it was impossible.<br>
+                        Because <b>YOU</b> are… absolutely precious.<br><br>
+
+                        You are the most amazing person I have ever met.<br>
+                        You are <b>ADORABLEEEE.</b><br><br>
+
+                        The way you talk, the way you write—<br>
+                        Everything about you is just <b>effortlessly
+                            adorable.</b><br><br>
+
+                        And you’re not just adorable—<br>
+                        <b>You’re the smartest person I know.</b><br>
+                        I don’t get easily impressed by people’s intelligence,
+                        but <b>you?</b><br>
+                        You’ve impressed me <b>over and over again.</b><br><br>
+
+                        And not just with your intelligence—<br>
+                        But with your <b>kindness</b>,<br>
+                        Your <b>deep religious knowledge</b>,<br>
+                        And the strength of your <b>values</b>.<br><br>
+
+                        I admire you so much,<br>
+                        And I’m <b>so, so proud of you.</b><br><br>
+
+                        And that’s still not all.<br><br>
+
+                        Your voice…<br>
+                        <b>Omg.</b><br>
+                        It’s the most <b>beautiful voice I have ever heard.</b>
+                        <i>Mashallah.</i> TvT<br>
+                        I literally replay your singing voice messages so
+                        often—<br>
+                        You have <b>no idea</b> -.-<br><br>
+
+                        And your <b>maturity</b>—<i>Mashallah.</i><br>
+                        That’s one of the things I find most <b>charming</b>
+                        about you.<br>
+                        The way you handle things, the way you think—<br>
+                        It’s something truly rare.<br><br>
+
+                        There’s <b>so much more</b> I could say—<br>
+                        So many more things I love about you.<br><br>
+
+                        Honestly, I could go on for hours…<br>
+                        But if I laid everything out now,<br>
+                        And you—uh—<b>rejected</b> me,<br>
+                        You’d probably end up being <b>hyper-aware</b> of all
+                        the little things I adore about you.<br><br>
+
+                        So…<br>
+                        I’ll leave it at that.<br>
+                        Maybe you’ll find out the rest later.<br>
+                        <b>Maybe.</b> -.-<br><br><br>
+
+                        Everyone has an image of their perfect partner in their
+                        mind—<br>
+                        And <b>you check every single box</b> on my
+                        list.<br><br>
+
+                        I usually avoid getting involved with Pakistani
+                        girls<br>
+                        Because most of the time, they just don’t match my vibe
+                        or humor.<br><br>
+
+                        My sense of humor and values have been heavily
+                        influenced by foreign culture,<br>
+                        Which makes it hard for them to truly understand or
+                        connect with me.<br><br>
+
+                        And the ones who <i>are</i> accustomed to foreign
+                        culture<br>
+                        Tend to be the type that make you think,<br>
+                        <b>“Astagfirullah, the Day of Judgment is
+                            near.”</b><br><br>
+
+                        But dating a foreigner isn’t ideal either—<br>
+                        Because while they might get the humor and references
+                        I’ve picked up,<br>
+                        They won’t understand the part of me that’s still
+                        Pakistani.<br><br>
+
+                        They won’t get the Pakistani jokes,<br>
+                        The little cultural nuances that <b>actually
+                            matter</b>—<br>
+                        A <b>BIG</b> deal, as I’ve come to realize through
+                        experience.<br><br><br>
+
+                        <b>YOU</b>—oh my God.<br><br>
+
+                        You don’t just understand both Western and Pakistani
+                        humor—<br>
+                        You actually have <b>great taste</b> in it.<br><br>
+
+                        And on top of that,<br>
+                        You’re <b>religious</b>,<br>
+                        With strong <b>values</b> and genuine
+                        <b>self-respect.</b><br><br>
+
+                        <b>BRO</b>, tell me—<br>
+                        <b>How are you not absolutely priceless?</b><br><br>
+
+                        Literally a <b>goddess</b> for someone like me. TvT<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-content">
+                    <h2>Okay... I Might Regret This</h2>
+
+                    <p>
+                        Normally, you never show desperation in things like
+                        these, because it can be a huge turn-off.
+                        But I'm going to let you see this—just so you can
+                        understand the depth of my feelings.
+                    </p>
+
+                    <p>
+                        First of all, I know I’m not that desirable... at least
+                        not good enough for someone like you.
+                        That’s why I stayed away from you—why I didn’t confess
+                        before.
+                        I believed there was no way I could ever be enough for
+                        you.
+                    </p>
+
+                    <p>
+                        But over time, I’ve come to realize... <strong>I do have
+                            some very valuable things</strong>—things that are
+                        incredibly rare in this day and age.
+                        And not only that, but <strong>a lot of our preferences
+                            actually align really well.</strong>
+                    </p>
+
+                    <h3>Personality</h3>
+
+                    <p>
+                        Look, I’m not one of those gangster-type cool street
+                        guys wearing chains and smoking cigarettes,
+                        nor am I one of those rough, dominant types.
+                    </p>
+
+                    <p>
+                        I’m the type who would hang onto your every word, ready
+                        to follow your every whim.
+                        My life isn’t particularly exciting, but you know what
+                        that means?
+                        <strong>My whole world will revolve around you—your
+                            happiness, your approval, your validation.</strong>
+                        And I’m sure you already know that I really am the type
+                        to do that.
+                    </p>
+
+                    <p>
+                        I’ve even <strong>promised God</strong>—so many times
+                        during prayer—that if He entrusted you to me,
+                        just once... if He gave me even one chance to have you
+                        as mine...
+                        then <strong>I’d crawl across 1,000 miles of broken
+                            glass just to keep you happy.</strong>
+                        I would do anything for you. I would cherish you.
+                        <strong>I would worship you like a goddess.</strong>
+                    </p>
+
+                    <p>
+                        I’ve been through a lot, and because of that, I have
+                        pretty high emotional intelligence.
+                        Despite acting childish most of the time online, I’m
+                        actually quite mature.
+                        That means, with me, you’ll be truly understood and
+                        cared for in a grounded, mature way—
+                        no childish drama, no toxicity.
+                    </p>
+
+                    <p>
+                        I love deeply. It’s life and death, all or nothing.
+                        <strong>When I commit, I give my entire soul.</strong>
+                        But I’m not reckless with that love. I don’t hand it out
+                        easily.
+                        Even with my exes, I always took time—testing, waiting,
+                        evaluating if they were truly worthy.
+                    </p>
+
+                    <p>
+                        And in my entire life, I’ve only met one person I almost
+                        gave that love to.
+                        Even then, it took six months. But she proved me wrong
+                        in the end.
+                    </p>
+
+                    <p>
+                        <strong>But you’re different.</strong>
+                        With you, <strong>I don’t need to test or wait.</strong>
+                        If you say yes... then my heart is already yours—with
+                        full devotion and zero hesitation.
+                    </p>
+
+                    <h3>Wealth</h3>
+
+                    <p>
+                        For me, dating has always been a trial period—a way to
+                        learn and grow with each other.
+                        That’s why wealth never mattered much in the
+                        past—because everything was temporary.
+                        It was just... testing.
+                    </p>
+
+                    <p>
+                        But this is different.
+                    </p>
+
+                    <p>
+                        <strong>I’m already giving you all my commitment and
+                            devotion from the very start.</strong>
+                        You’re the one who decides now—whether I get to keep you
+                        or not.
+                    </p>
+
+                    <p>
+                        And if <strong>financial stability</strong> is something
+                        you need to see a future with me,
+                        that’s totally valid. It’s fair. It’s reasonable.
+                    </p>
+
+                    <p>
+                        But please... <strong>trust me.</strong>
+                        I promise I will work my absolute hardest to achieve a
+                        salary of 3.5 to 5 lac per month
+                        <strong>before you finish your studies.</strong>
+                        And I wouldn’t even be confessing right now if I wasn’t
+                        100% sure in my heart that I can—and will—achieve that.
+                    </p>
+
+                    <p>
+                        That’s just the minimum I know I can reach within that
+                        time frame.
+                        It’s <strong>by no means my limit.</strong>
+                        You already know I have plans—big ones. The beginning is
+                        always the slowest part.
+                    </p>
+
+                    <p>
+                        No matter what, my love... whether I’m earning 50k or 50
+                        lac,
+                        <strong>I will do everything in my power to fulfill your
+                            wishes—even before you speak them.</strong>
+                    </p>
+
+                    <p>
+                        I’m already working hard every single day, exercising,
+                        growing, improving—just to become someone worthy of you.
+                        I want to be the best version of myself <strong>for you
+                            and our future.</strong>
+                    </p>
+
+                    <p>
+                        <strong>I will fulfill all your dreams—every single one
+                            of them.</strong>
+                    </p>
+
+                    <h3>Confession</h3>
+
+                    <h4><u>Rules & Boundaries</u></h4>
+
+                    <p>
+                        <strong>1. You Are Always Free to Leave.</strong><br>
+                        If you ever feel unhappy, if you feel you’re not getting
+                        what you deserve,
+                        if someone else comes along, or if life circumstances
+                        pull you away—you can walk away, anytime.
+                        Because <strong>your happiness matters most to
+                            me.</strong><br>
+                        But for me? I won’t leave unless you hurt me or betray
+                        me deeply.
+                        Otherwise, <strong>I’m here to stay. No matter
+                            what.</strong>
+                    </p>
+
+                    <p>
+                        <strong>2. Respect Above All.</strong><br>
+                        I will always keep things respectful—nothing that
+                        crosses your boundaries.
+                        <strong>Your dignity, your values, and your comfort come
+                            first.</strong>
+                    </p>
+
+                    <p>
+                        <strong>3. You Come First.</strong><br>
+                        Your well-being, your safety, your dreams—they come
+                        before mine.
+                        Not just out of love—but because it’s <strong>my
+                            responsibility.</strong>
+                    </p>
+
+                    <p>
+                        <strong>4. Honesty, Always.</strong><br>
+                        I will never lie to you. Not about feelings, not about
+                        anything.
+                        All I ask in return is the same honesty from you.
+                    </p>
+
+                    <p>
+                        <strong>5. I Will Never Stop Trying For
+                            You.</strong><br>
+                        Love isn’t just words—it’s effort.
+                        I will never stop putting in the work to show you how
+                        much you mean to me.
+                    </p>
+
+                    <h4><u>Some Things I Want to Emphasize</u></h4>
+
+                    <p>
+                        <strong>There’s nothing to lose—but everything to
+                            gain.</strong><br>
+                        Worst case? We break up. Or I fall short of my financial
+                        goal—which is still 1.5 to 2 years away—
+                        and you marry someone else like you would’ve anyway.<br>
+                        But right now? You’re not with anyone. And I’m here,
+                        ready to give you my all.<br>
+                        So please, just <strong>give me a chance.</strong><br>
+                        Worst case? You walk away. Best case? <strong>You find a
+                            kind of love you never knew you needed. ❤️</strong>
+                    </p>
+
+                    <p>
+                        Just imagine... what if I actually achieve everything
+                        for you?<br>
+                        What if you end up liking me back?<br>
+                        Then you’re not just getting a man. <strong>You’re
+                            getting a husband who would die for
+                            you,</strong><br>
+                        a man who would make you happy every single day—and
+                        never let you feel unloved. Not even for a second.
+                    </p>
+
+                    <p>
+                        Oh, and I’ll learn to cook everything you like.<br>
+                        I’ll do all the cooking for you... and everything else
+                        you tell me to do. Ahem—
+                    </p>
+
+                    <p>
+                        We could even meet in real life and go on some cute
+                        little dates. Just the two of us. 🌸
+                    </p>
+
+                    <p>
+                        Now I ask you, my queen—<br>
+                        <strong>Will you be mine?</strong><br>
+                        Please say yes. <strong>Pleaseeeeeeeeeeeeeeeeeeeeee
+                            TvT</strong><br>
+                        Just one chance—I promise I won’t let you down.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function myFunction(param) {
+        console.log("Function called with parameter:", param);
+    }
+
+    class Wrapper {
+        constructor(wrapperElement, param) {
+            this.wrapperElement = wrapperElement;
+            this.param = param;
+
+            this.wrapperElement.addEventListener('click', () => {
+                this.toggleActive();
+                myFunction(this.param);
+            });
+        }
+
+        toggleActive() {
+            this.wrapperElement.classList.add('active');
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const wrappers = document.querySelectorAll('.wrapper');
+        wrappers.forEach((wrapper, index) => {
+            new Wrapper(wrapper, index + 1);
+        });
+    });
+</script>
